@@ -8,6 +8,7 @@ public class Ejercicios
 	//2 puntos
 	static boolean esMultiploDeTres(int num)
 		{
+			//aqui se verifica si el numero es  multiplo de 3 y si lo es retorna true si no retorna false
 			if ((num % 3)==0)
 			return true;
 			{			
@@ -19,22 +20,23 @@ public class Ejercicios
 		int resultado=0;
 	
 	{
+		//si a es meno que b y a menor que c va retronar a
 		 if ((a < b) && (a < c)) 
 		 { 
 	      return a;
 		 }
-
+//si b es menor que a y b menor que c va a retornar b
 	     if ((b < a) && (b < c)) 
 	     {
 	    	 return b;
 	     }
-
+//si c es menor que a y menor que b va a retornar c
 	      if ((c < a) && (c < b))
 	      { 
 	       return c;
 	      }
 	}     
-
+//si esto se cumple va a retornar el resultado
 	 return resultado;          
 }       
 
@@ -44,6 +46,7 @@ public class Ejercicios
 	
 	int getPromedio(int arreglo[])
 	{
+		//introducimos el arreglo
 	int resultado = 0; 
 	int cantidad_numeros = 0;
 	for(int i=0; i<arreglo.length; i++) 
@@ -51,7 +54,7 @@ public class Ejercicios
 	resultado += arreglo[i]; 
 	cantidad_numeros ++; 
 	} 
-
+//el rsultado es el promedio de los numeros ingresdos 
 	resultado = (resultado / cantidad_numeros); 
 	return resultado; 
 	} 
@@ -83,13 +86,14 @@ public class Ejercicios
 	//1 punto oro extra
 		static int funcionRecursiva(int num)
 		{
-			
+			//introducimos un mumero
 			int resultado;
 			
 			if (num == 0)
 			{
 				resultado = 0;
 			}else
+			//aqui retorna el resultado la funcion recursiva
 			{ resultado = num + funcionRecursiva(num -1);
 			}
 			return resultado;
